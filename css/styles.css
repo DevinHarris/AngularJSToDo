@@ -1,0 +1,20 @@
+.done {
+	background-color: green;
+	color: #fff;
+}
+
+li {
+	text-align: center;
+}
+
+#disc {
+	margin: 10px 0;
+}
+
+#name {
+	display: inline-block;
+	width: 200px;
+	height: 40px;
+	border-radius: 5px;
+	border: 1px solid blue;
+}
