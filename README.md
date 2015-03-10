@@ -1,0 +1,1 @@
+A basic AngularJS ToDo list. Basic funtionality completed, but it's still a work in progress. 
