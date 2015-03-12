@@ -11,12 +11,17 @@
 		<div class="main">
 			<div id="info">
 				<input id="name" type="text" ng-model="name">
-				<h3>{{name + "'s"}} {{main.title}}</h3>
+				<h3 id="name_text">{{name + "'s"}} {{main.title}}</h3>
 				<p>Things to do: {{main.tasks.length}}</p>
 			</div>
 			
 			<ul class="list-group">
-				<li class="list-group-item" ng-repeat="task in main.tasks"><span class="glyphicon glyphicon-ok" ng-if="task.done"></span>{{task.name}}<p>Discription: {{task.disc}}</p><input type="checkbox" ng-model="task.done"></li>
+				<li class="list-group-item" ng-repeat="task in main.tasks">
+					<span class="glyphicon glyphicon-ok" ng-if="task.done"></span>
+					{{task.name}}
+					<p>Description: {{task.disc}}</p>
+					<input type="checkbox" ng-click="main.removeItem()" ng-model="task.done">
+				</li>
 			</ul>
 			
 

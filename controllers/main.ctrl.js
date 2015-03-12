@@ -15,8 +15,12 @@ angular.module('todo')
 			vm.tasks.pop();
 		};
 
-		vm.setUserName = function(name) {
-			// Code 
+		vm.removeItem = function(index) {
+			vm.tasks.splice(index, 1);
 		};
 
+	/*	vm.setUserName = function(name) {
+			// Code 
+		};
+	*/
 	}]);
